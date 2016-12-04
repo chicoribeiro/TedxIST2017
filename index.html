@@ -26,6 +26,29 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
         <script>
+        //Language Change
+        function LanguageEN() {
+          var hide = document.getElementsByClassName("PT");
+          var show = document.getElementsByClassName("EN");
+          for (var i = 0; i < hide.length; i++){
+            hide[i].style.display = "none";
+          }
+          for (var i = 0; i < show.length; i++){
+            show[i].style.display = "block";
+          }
+        }
+
+        function LanguagePT() {
+          var hide = document.getElementsByClassName("EN");
+          var show = document.getElementsByClassName("PT");
+          for (var i = 0; i < hide.length; i++){
+            hide[i].style.display = "none";
+          }
+          for (var i = 0; i < show.length; i++){
+            show[i].style.display = "block";
+          }
+        }
+
         window.odometerOptions = {
           selector: '.odometer',
           format: '(,ddd)', // Change how digit groups are formatted, and how many digits are shown after the decimal point
@@ -37,17 +60,38 @@
     <body class="">
       <!-- Pushy Menu -->
       <nav class="pushy pushy-left">
-        <ul class="list-unstyled">
+        <ul class="list-unstyled EN">
+          <li><a href="#home" onclick="LanguagePT()"><img src="images/pt.svg" width="30" height="30"></a></li>
             <li><a href="#home">Home</a></li>
-            <li><a href="#team">Equipa</a></li>
-            <li><a href="#about">About me</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#about">About Ted</a></li>
             <li><a href="#news">My Blog</a></li>
             <li><a href="#history">My History</a></li>
             <li><a href="#photos">Look my Photos</a></li>
             <li><a href="#contact">Get in Touch!</a></li>
             <li><a href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" target="_blank">Download</a></li>
         </ul>
+        <ul class="list-unstyled PT">
+            <li><a href="#home" class="PT" onclick="LanguageEN()"><img src="images/gb.svg" width="30" height="30"></a></li>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#team">Equipa</a></li>
+            <li><a href="#about">Sobre o Ted</a></li>
+            <li><a href="#news">My Blog</a></li>
+            <li><a href="#history">My History</a></li>
+            <li><a href="#photos">Look my Photos</a></li>
+            <li><a href="#contact">Get in Touch!</a></li>
+            <li><a href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" target="_blank">Download</a></li>
+        </ul>
+
       </nav>
+      <!-- <nav class="navbar navbar-static-top" style="margin:0 !important; position:fixed !important; width:100% !important">
+        <div class="row" style="background-color:white; position:static; width:100%; margin: 0; padding: 0;">
+
+            <div class="col-md-1 col-md-offset-8 col-xs-2 text-center">
+              <div class="menu-btn"><span class="hamburger"><i class="fa fa-bars"></i></span></div>
+            </div>
+        </div>
+      </nav> -->
 
       <!-- Site Overlay -->
       <div class="site-overlay"></div>
@@ -56,23 +100,21 @@
             <div class="container-fluid">
                 <!-- change the image in style.css to the class header .container-fluid [approximately row 50] -->
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-xs-10">
-                            <a href="#" class="thumbnail logo">
-                                <img src="images/your_logo.png" alt="" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-md-1 col-md-offset-8 col-xs-2 text-center">
-                          <div class="menu-btn"><span class="hamburger"><i class="fa fa-bars"></i></span></div>
-                        </div>
-                    </div>
+                  <div class="row" style="z-index:100; background-color:white; position:fixed; left:0; right:0;top:0;">
+                      <div class="col-md-3 col-xs-10" id="language" style="padding:20px !important;" >
+
+
+
+                      </div>
+                      <div class="col-md-1 col-md-offset-8 col-xs-2 text-center">
+                        <div class="menu-btn"><span class="hamburger"><i class="fa fa-bars"></i></span></div>
+                      </div>
+                  </div>
+
                     <div class="jumbotron">
                         <h1><small>2017</small></br>
-						<strong>TEDxIST</strong></h1>
-                        <p>This is a simple hero unit, a simple jumbotron-style component for<br>
-calling extra attention to featured content or information.</p>
-                        <p>
-	                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> 
+						                    <strong>TEDxIST</strong></h1>
+	                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                         	<a target="_blank" href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" class="btn btn-lg btn-danger" role="button">Download</a>
                         </p>
                     </div>
@@ -157,35 +199,132 @@ calling extra attention to featured content or information.</p>
                 </div>
             </div>
         </section>
+
+<!--###ruben_begin######################################## RUBEN SECTION BEGINS HERE#######################################################################################-->
         <section id="about" class="number wow fadeInUp" data-wow-delay="300ms">
             <!-- change the image in style.css to the class .number .container-fluid [approximately row 102] -->
-            <div class="container-fluid">
+            <div class="container-fluid" style="background-color:rgba(242, 242, 242, 1)">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 opaline col-md-offset-6">
+                      <center><h1>TED<sup>x</sup>IST</h1></center>
+                    </div>
+                    <!-- FIRST ROW-->
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="row">
-                                <div class="col-md-offset-1 col-md-10">
-                                    <h3>Ligula Mattis Ornare Ultricies</h3>
-                                    <h5>Pellentesque Cursus Amet Parturient Etiam</h5>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                </div>
+                                <div class="col-md-offset-1 col-md-10 PT" style="font-size: 120%">
+                                    <h3>O que é o TED?</h3>
+                                    <p>O TED começou em 1984 como um local de encontro para inovadores e líderes nas
+                                      áreas de tecnologia, entretenimento e design.</p>
+                                    <p>29 anos depois, TED tornou-se um ponto de encontro para uma comunidade global
+                                      de pessoas que acreditam no poder
+                                      das ideias que merecem ser espalhadas. Com as suas duas conferências anuais, o
+                                      website TED.com e projetos e iniciativas comunitárias, o TED transformou-se
+                                      numa plataforma e num movimento global de pessoas que acreditam no poder das
+                                      ideias e na sua capacidade para mudar o mundo que vivemos.
+                                    </p>
+                                    <p>TED significa Tecnologia, Entretenimento e Design - três áreas de estudo que,
+                                      em conjunto, modelam o nosso futuro. Mas, na verdade, este evento é hoje muito
+                                      mais abrangente, discutindo ideias que são relevantes em qualquer área.
+                                    </p>
+                                  </div>
+                                  <div class="col-md-offset-1 col-md-10 EN" style="font-size: 120%">
+                                      <h3>What is TED?</h3>
+                                      <p>TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, powerful talks.
+                                        TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers
+                                        almost all topics — from science to business to global issues — in more than 110 languages. Meanwhile,
+                                        independently run TEDx events help share ideas in communities around the world.
+                                      </p>
+                                  </div>
                             </div>
-                            <div class="row text-center">
-                                <!-- set the numbers in assets/js/scripts.js  -->
-                                <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-1 col-md-offset-1 col-sm-6 wow fadeInUp">
-                                    <h5>Ultricies</h5>
-                                    <h3 class="odometer 01">00000</h3>
+                        </div>
+
+                    </div>
+                    <!-- SECOND ROW-->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-12">
+                                    <img src="images/tedx.jpg" style="margin: auto; padding: 10% 10% 10% 10%; width:100%;height:100%;">
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-10 PT">
+                                  <h3>O que é um evento TEDx?</h3>
+                                  <p>No espírito das ideias que merecem ser espalhadas, o TED criou um programa
+                                    chamado TEDx. Este é um programa de eventos locais, auto-organizados que
+                                    reúnem pessoas para partilharem uma experiência ao nível do TED, de onde
+                                    resulta o x, significando este, evento TED organizado de forma independente.
+                                  </p>
+                                  <p>
+                                    Eventos TEDx caracterizam-se pela participação de oradores convidados e pela
+                                    apresentação de vídeos de "TEDTalks" marcantes, tendo como objetivo induzir
+                                    na audiência novas formas de pensar.
+                                  </p>
+                                  <p> O TED fornece unicamente orientações gerais, embora, para cada evento TEDx,
+                                    incluindo o nosso, a organização seja autónoma e independente.
+                                  </p>
                                 </div>
-                                <div class="col-md-4 boxes col-xs-6 col-xs-offset-3 col-lg-4 col-lg-offset-2 col-md-offset-2 col-sm-6 wow fadeInUp" data-wow-delay="300ms">
-                                    <h5>Fermentum</h5>
-                                    <h3 class="odometer 02">00000</h3>
+                                <div class="col-md-offset-1 col-md-10 EN">
+                                  <h3>What is a TEDx Event?</h3>
+                                  <p>In the spirit of ideas worth spreading, TEDx is a program of local, self -
+                                    organized events that bring people together to share a TED - like experience.
+                                    At a TEDx event, TED Talks video and live speakers combine to spark deep
+                                    discussion and connection in a smallgroup. These local, self- organized events
+                                    are branded TEDx, where x = independently organized TED event.
+                                  </p>
+                                  <p>A TEDx event is a local gathering where live TED-like talks and videos
+                                    previously recorded at TED conferences are shared with the community.
+                                    TEDx events are fully planned and coordinated independently,
+                                    on a community-by-community basis. The content and design of each TEDx event
+                                    is unique and developed independently, but all of them have features in common.
+                                  </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Third ROW-->
+                    <div class="row" >
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-10 PT">
+                                    <h3>O que é o TEDxIST?</h3>
+                                    <p>O TEDxIST é um evento organizado por um grupo de alunos do Instituto Superior Técnico,
+                                      de forma independente, com o apoio do LAGE2  para toda a comunidade do IST e que se
+                                      realiza todos os anos no campus Taguspark.
+                                    </p>
+                                    <p> O nosso objectivo é transmitir o espírito TED à comunidade da escola e, ao mesmo tempo,
+                                      atrair membros fora desta que queiram partilhar uma experiência única.
+                                    </p>
+                                    <p> O TEDxIST está em plena sintonia com a missão do TED, “sharing ideas worth spreading”.
+                                      Acreditamos no poder que as ideias possuem capazes de mudar atitudes, vidas e, em
+                                      conjunto, o mundo.
+                                    </p>
+                                  </div>
+                                  <div class="col-md-offset-1 col-md-10 EN">
+                                      <h3>What is TEDxIST?</h3>
+                                      <p>TODO
+                                      </p>
+                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-12" style="margin:0;">
+                                  <img src="images/atrio.jpg" style="padding: 10% 10% 10% 10%; width:100%;height:100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+<!--###ruben_end######################################## RUBEN SECTION ENDS HERE#######################################################################################-->
         <section id="news" class="blog wow fadeInUp" data-wow-delay="300ms">
             <div class="container">
                 <div class="row">
