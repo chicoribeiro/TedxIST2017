@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Mountain King - Bootstrap Template</title>
+        <title>TEDxIST2017</title>
+        <link rel="shortcut icon" href="images/photo.jpg" type="image/x-icon">
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/theme.css" rel="stylesheet">
         <!-- Custom styles for this template -->
@@ -49,6 +50,7 @@
           }
         }
 
+
         window.odometerOptions = {
           selector: '.odometer',
           format: '(,ddd)', // Change how digit groups are formatted, and how many digits are shown after the decimal point
@@ -58,155 +60,133 @@
         </script>
     </head>
     <body class="">
-      <!-- Pushy Menu -->
-      <nav class="pushy pushy-left">
-        <ul class="list-unstyled EN">
-          <li><a href="#home" onclick="LanguagePT()"><img src="images/pt.svg" width="30" height="30"></a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#about">About Ted</a></li>
-            <li><a href="#speakers">Oradores</a></li>
-            <li><a href="#sponsor">Parceiros</a></li>
-            <li><a href="#photos">Look my Photos</a></li>
-            <li><a href="#contact">Get in Touch!</a></li>
-            <li><a href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" target="_blank">Download</a></li>
-        </ul>
-        <ul class="list-unstyled PT">
-            <li><a href="#home" class="PT" onclick="LanguageEN()"><img src="images/gb.svg" width="30" height="30"></a></li>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#team">Equipa</a></li>
-            <li><a href="#about">Sobre o Ted</a></li>
-            <li><a href="#speakers">Oradores</a></li>
-            <li><a href="#sponsor">Parceiros</a></li>
-            <li><a href="#photos">Look my Photos</a></li>
-            <li><a href="#contact">Get in Touch!</a></li>
-            <li><a href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" target="_blank">Download</a></li>
-        </ul>
+      <!-- Top bar -->
+      <div class="top-bar PT">
+      		<td>
+            <tr> <span onclick="LanguagePT()" style="cursor:pointer;float:left;padding-left:10px;color:#e62b1e;"> PT|</span> </tr>
+            <tr> <span onclick="LanguageEN()" style="cursor:pointer;float:left;color:#e62b1e;">EN</span></tr>
+            <tr><a href="#home">Home</a> |</tr>
+            <tr><a href="#team">Equipa</a> |</tr>
+            <tr><a href="#about">TEDxIST</a> |</tr>
+            <tr><a href="#speakers">Oradores</a> |</tr>
+            <tr><a href="#info">Informações</a></tr>
+            </td>
+      </div>
 
-      </nav>
-      <!-- <nav class="navbar navbar-static-top" style="margin:0 !important; position:fixed !important; width:100% !important">
-        <div class="row" style="background-color:white; position:static; width:100%; margin: 0; padding: 0;">
-
-            <div class="col-md-1 col-md-offset-8 col-xs-2 text-center">
-              <div class="menu-btn"><span class="hamburger"><i class="fa fa-bars"></i></span></div>
-            </div>
-        </div>
-      </nav> -->
-
-      <!-- Site Overlay -->
-      <div class="site-overlay"></div>
+      <div class="top-bar EN">
+          <td>
+            <tr> <span onclick="LanguagePT()" style="cursor:pointer;float:left;padding-left:10px;color:#e62b1e;"> PT|</span> </tr>
+            <tr> <span onclick="LanguageEN()" style="cursor:pointer;float:left;color:#e62b1e;">EN</span></tr>
+            <tr><a href="#home">Home</a> |</tr>
+            <tr><a href="#team">The Team</a> |</tr>
+            <tr><a href="#about">TEDxIST</a> |</tr>
+            <tr><a href="#speakers">Speakers</a> |</tr>
+            <tr><a href="#info">Information</a></tr>
+            </td>
+      </div>
 
         <header id="home">
             <div class="container-fluid">
                 <!-- change the image in style.css to the class header .container-fluid [approximately row 50] -->
                 <div class="container">
-                  <div class="row" style="z-index:100; background-color:white; position:fixed; left:0; right:0;top:0;">
-                      <div class="col-md-3 col-xs-10" id="language" style="padding:20px !important;" >
-
-
-
-                      </div>
-                      <div class="col-md-1 col-md-offset-8 col-xs-2 text-center">
-                        <div class="menu-btn"><span class="hamburger"><i class="fa fa-bars"></i></span></div>
-                      </div>
-                  </div>
 
                     <div class="jumbotron">
-                        <h1><small>2017</small></br>
-						                    <strong>TEDxIST</strong></h1>
-	                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                        	<a target="_blank" href="http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/" class="btn btn-lg btn-danger" role="button">Download</a>
-                        </p>
+                        <div class="begin">
+                        <span id="big-title" class="wow fadeInUp" data-wow-delay="200ms"><strong>TED<span class="x">x</span>IST</strong><br></span>
+                        <span id="year" class="wow fadeInUp" data-wow-delay="600ms"><small>2017</small></br></span>
+                       <!-- <a id="know" href="#about" role="button">Conheça o evento<br></a> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <section id="team">
             <div class="container">
+                <div class="equipa PT">Equipa</div>
+                <div class="equipa EN">The Team</div>
                 <div class="row features">
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
-                        <span class="typcn typcn-pencil x3"></span>
+                        <img class="team-sel" src="team/IMG_8949.jpg" width="230px">
                         <h4>André Costa</h4>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms">
-                        <span class="typcn typcn-camera-outline x3"></span>
+                        <img class="team-sel" src="team/IMG_8874.jpg" width="230px">
                         <h4>André Miguel</h4>
                     </div>
                     <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <span class="typcn typcn-bookmark x3"></span>
+                        <img class="team-sel" src="team/IMG_8886.jpg" width="230px">
                         <h4>Andrei Negara</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="400ms">
-                        <span class="typcn typcn-pencil x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
+                        <img class="team-sel" src="team/IMG_8894.jpg" width="230px">
                         <h4>Carlota Gouveia</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="500ms">
-                        <span class="typcn typcn-camera-outline x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms">
+                        <img class="team-sel" src="team/IMG_8923.jpg" width="230px">
                         <h4>Filipa Alves</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="600ms">
-                        <span class="typcn typcn-bookmark x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <img class="team-sel" src="team/IMG_8865.jpg" width="230px">
                         <h4>Filipa Rocha</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="700ms">
-                        <span class="typcn typcn-pencil x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
+                        <img class="team-sel" src="team/IMG_8890.jpg" width="230px">
                         <h4>Francisco Ribeiro</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="800ms">
-                        <span class="typcn typcn-camera-outline x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms">
+                        <img class="team-sel" src="team/IMG_8946.jpg" width="230px">
                         <h4>Gonçalo Pina</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="900ms">
-                        <span class="typcn typcn-bookmark x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <img class="team-sel" src="team/IMG_8920.jpg" width="230px">
                         <h4>Inês Ferreira</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1000ms">
-                        <span class="typcn typcn-pencil x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
+                        <img class="team-sel" src="team/IMG_8930.jpg" width="230px">
                         <h4>Inês Percheiro</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1100ms">
-                        <span class="typcn typcn-camera-outline x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms">
+                        <img class="team-sel" src="team/IMG_8952.jpg" width="230px">
                         <h4>João Oliveira</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1200ms">
-                        <span class="typcn typcn-bookmark x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <img class="team-sel" src="team/IMG_8962.jpg" width="230px">
                         <h4>João Teixeira</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1300ms">
-                        <span class="typcn typcn-pencil x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
+                        <img class="team-sel" src="team/IMG_8883.jpg" width="230px">
                         <h4>Liliana Oliveira</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1400ms">
-                        <span class="typcn typcn-camera-outline x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms">
+                        <img class="team-sel" src="team/IMG_8965.jpg" width="230px">
                         <h4>Luiz Arakaki</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1500ms">
-                        <span class="typcn typcn-bookmark x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <img class="team-sel" src="team/IMG_8943.jpg" width="230px">
                         <h4>Mafalda Seabra</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1600ms">
-                        <span class="typcn typcn-pencil x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms">
+                        <img class="team-sel" src="team/IMG_8929.jpg" width="230px">
                         <h4>Patrícia Ferreira</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1700ms">
-                        <span class="typcn typcn-camera-outline x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms">
+                        <img class="team-sel" src="team/IMG_8957.jpg" width="230px">
                         <h4>Pedro Veiga</h4>
                     </div>
-                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="1800ms">
-                        <span class="typcn typcn-bookmark x3"></span>
+                    <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="300ms">
+                        <img class="team-sel" src="team/IMG_9005.jpg" width="230px">
                         <h4>Rúben Marques</h4>
                     </div>
                 </div>
             </div>
         </section>
-
-<!--###ruben_begin######################################## RUBEN SECTION BEGINS HERE#######################################################################################-->
+        <!--###ruben_begin######################################## RUBEN SECTION BEGINS HERE#######################################################################################-->
         <section id="about" class="number wow fadeInUp" data-wow-delay="300ms">
             <!-- change the image in style.css to the class .number .container-fluid [approximately row 102] -->
             <div class="container-fluid" style="background-color:rgba(242, 242, 242, 1)">
                 <div class="container">
                     <div class="row">
-                      <center><h1>TED<sup>x</sup>IST</h1></center>
+                      <center><h1 class="equipa">TED<sup>x</sup>IST</h1></center>
                     </div>
                     <!-- FIRST ROW-->
                     <div class="row">
@@ -242,7 +222,15 @@
                     </div>
                     <!-- SECOND ROW-->
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-offset-1 col-md-10 EN" style="font-size: 120%">
+                                      <h3>What is TED?</h3>
+                                      <p>TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, powerful talks.
+                                        TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers
+                                        almost all topics — from science to business to global issues — in more than 110 languages. Meanwhile,
+                                        independently run TEDx events help share ideas in communities around the world.
+                                      </p>
+                                  </div>                        
+                                  <div class="col-md-5">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-12">
                                     <img src="images/tedx.jpg" style="margin: auto; padding: 10% 10% 10% 10%; width:100%;height:100%;">
@@ -309,7 +297,6 @@
                                       <p>TODO
                                       </p>
                                     </div>
-
                             </div>
                         </div>
                         <div class="col-md-5">
@@ -321,14 +308,38 @@
                         </div>
                     </div>
 
+                    <div class="row" >
+                        <div class="col-md-7">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-10" style="font-size: 120%">
+                                        <h3>TED Talks</h3>
+                                        <div class="container">
+                                        <div class="row features">
+                                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="100ms" id="talks">
+                                        <iframe src="https://embed.ted.com/talks/simon_sinek_how_great_leaders_inspire_action" width="500" height="320" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                        
+                                        </div>
+                                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="200ms" id="talks">
+                                        <iframe src="https://embed.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are" width="500" height="320" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                        
+                                        </div>
+                                        </div>
+                                        </div>
+                                      </p>
+                                  </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 <!--###ruben_end######################################## RUBEN SECTION ENDS HERE#######################################################################################-->
-        <section id="speakers" class="blog wow fadeInUp" data-wow-delay="300ms">
+<section id="speakers" class="blog wow fadeInUp" data-wow-delay="300ms">
             <div class="container">
-            	<div class="row">
-                      <center><h1>Oradores</h1></center>
+                <div class="row">
+                      <center><h1 class="equipa">Oradores</h1></center>
                    
                 </div>
                 <div class="row">
@@ -345,46 +356,47 @@
                 </div>
             </div>
         </section>
-        <section id="photos" class="gallery wow fadeInUp" data-wow-delay="300ms">
-            <div class="container">
-                <div class="row">
-                    <div class="masonry image-gallery">
-                        <div class="grid-sizer"></div>
-                        <div class="gutter-sizer"></div>
-                        <div class="item item-width2">
-                            <a href="https://unsplash.it/1000/600?image=529">
-                              <img src="https://unsplash.it/600/300?image=529" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/1000/600?image=523">
-                              <img src="https://unsplash.it/320/776?image=523" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/600/1000?image=503">
-                              <img src="https://unsplash.it/500/800?image=503" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/1000/600?image=505">
-                              <img src="https://unsplash.it/400/400?image=505" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/800/800?image=454">
-                              <img src="https://unsplash.it/4403/2476?image=454" alt="" />
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="https://unsplash.it/800/800?image=515">
-                              <img src="https://unsplash.it/585/439?image=515" alt="" />
-                            </a>
-                        </div>
-                        <div class="item item-width2">
-                            <a href="https://unsplash.it/1000/600?image=451">
-                              <img src="https://unsplash.it/600/140?image=451" alt="" />
-                            </a>
+       <section id="info" class="wow fadeInUp" data-wow-delay="300ms">
+            <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
+            <div style="background-color:rgba(242, 242, 242, 1);">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h3 class="equipa">Onde estamos</h3><center>
+                            <p>
+                            <strong>Instituto Superior Técnico - Campus Taguspark</strong><br>
+                            Av. Prof. Doutor Cavaco Silva<br>
+                            2744-016 Porto Salvo<br>
+                            <strong>TEDxIST Team</strong><br>
+                            info@tedxist.tecnico.ulisboa.pt<br>
+                            <br>
+                            <br>
+                            <br>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12448.351267831584!2d-9.302791!3d38.738747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x928a2fedee483006!2sInstituto+Superior+T%C3%A9cnico+-+Taguspark!5e0!3m2!1sen!2spt!4v1480983510338" width="600" height="450" frameborder="0" style="border=5px;" allowfullscreen></iframe></center>
+
+                            <br>
+                            <br>
+                            <h3><center><strong>Comboio</strong></center></h3><br>                          
+                            Há ligações ao campus a partir das linhas ferroviárias Lisboa-Sintra e Lisboa-Cascais. A empresa que tem a concessão do transporte público rodoviário para esta zona é a Vimeca Transportes.<br>
+
+
+                            <h3><center><strong>Autocarro</strong></center></h3><br> 
+                            A empresa de transporte rodoviário Vimeca efectua algumas carreiras que servem o campus do Taguspark. Para informação actualizada e detalhada sobre os percursos e horários visite, por favor, o web site da Vimeca.
+
+                            Carreira Nº 112 (Belas - Oeiras) frequência de 15 a 120 minutos, entre as 06:20 e as 00:05.<br> 
+
+
+                            <h3><center><strong>Táxi</strong></center></h3><br> 
+                            Os táxis permitem chegar ao Taguspark a partir de qualquer ponto da cidade, mas os custos também aumentam de acordo com a distância, trânsito e hora. Uma viagem do centro de Lisboa até ao Taguspark tem uma duração de cerca de 30 minutos.<br>
+
+
+                            <h3><center><strong>Carro</strong></center></h3><br> 
+                            Pela A5 - Auto-estrada Lisboa-Cascais: saída em Cacém/Porto Salvo. A via rápida (Porto Salvo) entre a A5 e o Cacém permite um acesso mais directo ao campus.<br>
+
+                            Pelo IC 19 - saída no Cacém, em direcção a Paço d'Arcos, e ligação ao IST - campus Taguspark.<br><br>
+                            
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -393,7 +405,7 @@
         <section id ="sponsor" class="clients wow fadeInUp" data-wow-delay="300ms">
             <div class="container">
                 <div class="row">
-                	<center><h1>Parceiros</h1></center>
+                    <center><h1 class="equipa">Parceiros</h1></center>
                     <div class="col-md-2">
                         <img src="images/slow_logo.jpg" class="img-responsive" />
                     </div>
@@ -404,26 +416,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="prefooter wow fadeInUp" data-wow-delay="300ms">
-            <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3>Maecenas sed diam eget risus varius<br> blandit sit amet non magna.</h3>
-                            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Email Here...">
-                                    <br>
-                                    <button type="button" class="btn btn-danger">Submit Newsletter</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <footer>
             <div class="container">
                 <div class="row">
@@ -436,16 +429,13 @@
                         <img src="images/lage.png" class="img-responsive" />
                     </div>
                 </div>
-                        <p>© 2016 Your Company. Designed and Developed by <a target="_blank" href="http://www.themeinthebox.com">ThemeintheBox.com</a></p>
+                        <p>© 2016 TEDxIST2017</p>
                     </div>
                     <div class="col-md-4">
                         <p class="text-right social">
-	                        <a href="https://www.facebook.com/ThemeInTheBox/" target="_blank"><i class="typcn typcn-social-facebook-circular"></i></a>
-							<a href="https://twitter.com/ThemeintheBox" target="_blank"><i class="typcn typcn-social-twitter-circular"></i></a>
-							<i class="typcn typcn-social-tumbler-circular"></i>
-							<i class="typcn typcn-social-github-circular"></i>
-							<i class="typcn typcn-social-dribbble-circular"></i>
-						</p>
+                            <a href="https://www.facebook.com/TEDxIST/" target="_blank"><i class="typcn typcn-social-facebook-circular"></i></a>
+                            
+                        </p>
                     </div>
                 </div>
             </div>
